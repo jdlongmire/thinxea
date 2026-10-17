@@ -1,0 +1,10 @@
+# Prepared ingress for ea.thinxai.net. NOT installed automatically:
+# adding this to the host's cloudflared configuration and creating
+# the DNS record are the operator's cutover steps.
+ingress:
+  - hostname: ea.thinxai.net
+    path: ^/api/.*
+    service: http://127.0.0.1:8941
+  - hostname: ea.thinxai.net
+    service: http://127.0.0.1:8940
+  - service: http_status:404

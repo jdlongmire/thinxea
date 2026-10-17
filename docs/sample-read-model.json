@@ -1,0 +1,491 @@
+{
+  "product": "ThinxEA",
+  "generatedFrom": {
+    "repository": "jdlongmire/ea-repository-template",
+    "example": "claims-processing-platform (fictional)"
+  },
+  "counts": {
+    "artifacts": 15,
+    "elements": 15,
+    "relations": 15,
+    "views": 6
+  },
+  "artifacts": [
+    {
+      "id": "ADR-001",
+      "type": "decision",
+      "name": "Event-Driven Integration for Claims Intake",
+      "level": "systems",
+      "owner": "enterprise-architecture",
+      "status": "ratified"
+    },
+    {
+      "id": "CAP-001",
+      "type": "capability",
+      "name": "Claims Intake and Processing",
+      "level": "enterprise",
+      "owner": "enterprise-architecture",
+      "status": "target"
+    },
+    {
+      "id": "INT-003",
+      "type": "interface",
+      "name": "Claims Intake API",
+      "level": "systems",
+      "owner": "enterprise-architecture",
+      "status": "target"
+    },
+    {
+      "id": "INT-007",
+      "type": "interface",
+      "name": "Payment Disbursement API",
+      "level": "systems",
+      "owner": "enterprise-architecture",
+      "status": "target"
+    },
+    {
+      "id": "REQ-001",
+      "type": "requirement",
+      "name": "Claims Data Classified at Intake",
+      "level": "enterprise",
+      "owner": "enterprise-architecture",
+      "status": "ratified"
+    },
+    {
+      "id": "REQ-002",
+      "type": "requirement",
+      "name": "Idempotent Claim Submission",
+      "level": "systems",
+      "owner": "enterprise-architecture",
+      "status": "ratified"
+    },
+    {
+      "id": "RM-001",
+      "type": "roadmap",
+      "name": "Claims Modernization Roadmap",
+      "level": "enterprise",
+      "owner": "enterprise-architecture",
+      "status": "ratified"
+    },
+    {
+      "id": "RM-002",
+      "type": "roadmap",
+      "name": "Claims Platform Delivery Roadmap",
+      "level": "systems",
+      "owner": "enterprise-architecture",
+      "status": "ratified"
+    },
+    {
+      "id": "SOL-001",
+      "type": "solution",
+      "name": "Mobile Claims Intake",
+      "level": "solutions",
+      "owner": "enterprise-architecture",
+      "status": "proposed",
+      "system": "SYS-014"
+    },
+    {
+      "id": "STD-DATA-002",
+      "type": "standard",
+      "name": "Data Classification and Handling",
+      "level": "enterprise",
+      "owner": "enterprise-architecture",
+      "status": "ratified",
+      "enforcement": "policy"
+    },
+    {
+      "id": "STD-SEC-001",
+      "type": "standard",
+      "name": "Identity and Access for Systems",
+      "level": "enterprise",
+      "owner": "enterprise-architecture",
+      "status": "ratified",
+      "enforcement": "review"
+    },
+    {
+      "id": "STR-001",
+      "type": "strategy",
+      "name": "Digital-First Service Strategy",
+      "level": "enterprise",
+      "owner": "enterprise-architecture",
+      "status": "ratified"
+    },
+    {
+      "id": "STR-002",
+      "type": "strategy",
+      "name": "Claims Platform Consolidation Strategy",
+      "level": "systems",
+      "owner": "enterprise-architecture",
+      "status": "ratified"
+    },
+    {
+      "id": "SYS-014",
+      "type": "system",
+      "name": "Claims Processing Platform",
+      "level": "systems",
+      "owner": "enterprise-architecture",
+      "status": "target",
+      "interfaces": [
+        "INT-003",
+        "INT-007"
+      ],
+      "standards": [
+        "STD-DATA-002",
+        "STD-SEC-001"
+      ],
+      "data_classification": "internal"
+    },
+    {
+      "id": "WP-001",
+      "type": "work-package",
+      "name": "Ratify Claims Platform Target Architecture",
+      "level": "cross-cutting",
+      "owner": "enterprise-architecture",
+      "status": "closed"
+    }
+  ],
+  "catalog": {
+    "element": [
+      {
+        "id": "STR-001",
+        "type": "strategy",
+        "name": "Digital-First Service Strategy",
+        "level": "enterprise"
+      },
+      {
+        "id": "REQ-001",
+        "type": "requirement",
+        "name": "Claims Data Classified at Intake",
+        "level": "enterprise"
+      },
+      {
+        "id": "CAP-001",
+        "type": "capability",
+        "name": "Claims Intake and Processing",
+        "level": "enterprise"
+      },
+      {
+        "id": "RM-001",
+        "type": "roadmap",
+        "name": "Claims Modernization Roadmap",
+        "level": "enterprise"
+      },
+      {
+        "id": "STD-DATA-002",
+        "type": "standard",
+        "name": "Data Classification and Handling",
+        "level": "enterprise"
+      },
+      {
+        "id": "STD-SEC-001",
+        "type": "standard",
+        "name": "Identity and Access for Systems",
+        "level": "enterprise"
+      },
+      {
+        "id": "STR-002",
+        "type": "strategy",
+        "name": "Claims Platform Consolidation Strategy",
+        "level": "systems"
+      },
+      {
+        "id": "REQ-002",
+        "type": "requirement",
+        "name": "Idempotent Claim Submission",
+        "level": "systems"
+      },
+      {
+        "id": "SYS-014",
+        "type": "system",
+        "name": "Claims Processing Platform",
+        "level": "systems"
+      },
+      {
+        "id": "INT-003",
+        "type": "interface",
+        "name": "Claims Intake API",
+        "level": "systems"
+      },
+      {
+        "id": "INT-007",
+        "type": "interface",
+        "name": "Payment Disbursement API",
+        "level": "systems"
+      },
+      {
+        "id": "ADR-001",
+        "type": "decision",
+        "name": "Event-Driven Integration for Claims Intake",
+        "level": "systems"
+      },
+      {
+        "id": "RM-002",
+        "type": "roadmap",
+        "name": "Claims Platform Delivery Roadmap",
+        "level": "systems"
+      },
+      {
+        "id": "SOL-001",
+        "type": "solution",
+        "name": "Mobile Claims Intake",
+        "level": "solutions"
+      },
+      {
+        "id": "WP-001",
+        "type": "work-package",
+        "name": "Ratify Claims Platform Target Architecture",
+        "level": "cross-cutting"
+      }
+    ],
+    "relation": [
+      {
+        "source": "SYS-014",
+        "relation": "realizes",
+        "target": "CAP-001"
+      },
+      {
+        "source": "SYS-014",
+        "relation": "uses",
+        "target": "INT-003"
+      },
+      {
+        "source": "SYS-014",
+        "relation": "uses",
+        "target": "INT-007"
+      },
+      {
+        "source": "SYS-014",
+        "relation": "bound-by",
+        "target": "STD-DATA-002"
+      },
+      {
+        "source": "SYS-014",
+        "relation": "bound-by",
+        "target": "STD-SEC-001"
+      },
+      {
+        "source": "SYS-014",
+        "relation": "decided-by",
+        "target": "ADR-001"
+      },
+      {
+        "source": "SOL-001",
+        "relation": "uses",
+        "target": "SYS-014"
+      },
+      {
+        "source": "SOL-001",
+        "relation": "uses",
+        "target": "INT-003"
+      },
+      {
+        "source": "REQ-001",
+        "relation": "allocated-to",
+        "target": "CAP-001"
+      },
+      {
+        "source": "REQ-001",
+        "relation": "allocated-to",
+        "target": "SYS-014"
+      },
+      {
+        "source": "REQ-002",
+        "relation": "allocated-to",
+        "target": "SYS-014"
+      },
+      {
+        "source": "REQ-002",
+        "relation": "allocated-to",
+        "target": "INT-003"
+      },
+      {
+        "source": "WP-001",
+        "relation": "delivers",
+        "target": "RM-001"
+      },
+      {
+        "source": "RM-002",
+        "relation": "depends-on",
+        "target": "RM-001"
+      },
+      {
+        "source": "STR-002",
+        "relation": "depends-on",
+        "target": "STR-001"
+      }
+    ]
+  },
+  "views": [
+    {
+      "id": "VW-001",
+      "title": "Capability Realization",
+      "viewpoint": "Capability realization",
+      "concern": "Which systems and solutions realize the enterprise capability",
+      "level": "enterprise",
+      "focus": "architecture",
+      "elements": [
+        "CAP-001",
+        "SYS-014",
+        "SOL-001"
+      ],
+      "membership_complete": true,
+      "relation_complete": true,
+      "svg": "/views/vw-001.svg",
+      "mmd": "/views/vw-001.mmd"
+    },
+    {
+      "id": "VW-002",
+      "title": "System Cooperation",
+      "viewpoint": "System cooperation",
+      "concern": "How the platform, its interfaces, its consuming solution, and its governing decision fit together",
+      "level": "systems",
+      "focus": "architecture",
+      "elements": [
+        "SYS-014",
+        "INT-003",
+        "INT-007",
+        "SOL-001",
+        "ADR-001"
+      ],
+      "membership_complete": true,
+      "relation_complete": true,
+      "svg": "/views/vw-002.svg",
+      "mmd": "/views/vw-002.mmd"
+    },
+    {
+      "id": "VW-003",
+      "title": "Standards Register",
+      "viewpoint": "Standards in force",
+      "concern": "Which standards govern, how each is enforced, and what binds to them",
+      "level": "enterprise",
+      "focus": "standards",
+      "elements": [
+        "STD-DATA-002",
+        "STD-SEC-001",
+        "SYS-014"
+      ],
+      "membership_complete": true,
+      "relation_complete": true,
+      "svg": "/views/vw-003.svg",
+      "mmd": "/views/vw-003.mmd"
+    },
+    {
+      "id": "VW-004",
+      "title": "Roadmap and Delivery",
+      "viewpoint": "Roadmaps and the work that delivers them",
+      "concern": "How strategy descends into roadmaps at two levels, and which work package delivers the enterprise roadmap",
+      "level": "enterprise",
+      "focus": "roadmaps",
+      "elements": [
+        "STR-001",
+        "STR-002",
+        "RM-001",
+        "RM-002",
+        "WP-001"
+      ],
+      "membership_complete": true,
+      "relation_complete": true,
+      "svg": "/views/vw-004.svg",
+      "mmd": "/views/vw-004.mmd"
+    },
+    {
+      "id": "VW-005",
+      "title": "Requirements Realization",
+      "viewpoint": "Requirements realization",
+      "concern": "How each requirement is allocated to the capability, system, and interface that realize it",
+      "level": "cross-level",
+      "focus": "traceability",
+      "elements": [
+        "REQ-001",
+        "REQ-002",
+        "CAP-001",
+        "SYS-014",
+        "INT-003"
+      ],
+      "membership_complete": true,
+      "relation_complete": true,
+      "svg": "/views/vw-005.svg",
+      "mmd": "/views/vw-005.mmd"
+    },
+    {
+      "id": "VW-006",
+      "title": "Solution Composition",
+      "viewpoint": "Solution composition",
+      "concern": "What the solution is built on: its system and the interface it files against",
+      "level": "solutions",
+      "focus": "architecture",
+      "elements": [
+        "SOL-001",
+        "SYS-014",
+        "INT-003"
+      ],
+      "membership_complete": true,
+      "relation_complete": true,
+      "svg": "/views/vw-006.svg",
+      "mmd": "/views/vw-006.mmd"
+    }
+  ],
+  "standards": [
+    {
+      "id": "STD-DATA-002",
+      "name": "Data Classification and Handling",
+      "enforcement": "policy",
+      "policyFile": "policies/std-data-002.rego",
+      "boundElements": [
+        "SYS-014"
+      ]
+    },
+    {
+      "id": "STD-SEC-001",
+      "name": "Identity and Access for Systems",
+      "enforcement": "review",
+      "policyFile": null,
+      "boundElements": [
+        "SYS-014"
+      ]
+    }
+  ],
+  "sarsGrid": {
+    "systems": {
+      "architecture": [
+        "ADR-001",
+        "INT-003",
+        "INT-007",
+        "SYS-014"
+      ],
+      "strategy": [
+        "REQ-002",
+        "STR-002"
+      ],
+      "roadmaps": [
+        "RM-002"
+      ]
+    },
+    "enterprise": {
+      "architecture": [
+        "CAP-001"
+      ],
+      "strategy": [
+        "REQ-001",
+        "STR-001"
+      ],
+      "roadmaps": [
+        "RM-001"
+      ],
+      "standards": [
+        "STD-DATA-002",
+        "STD-SEC-001"
+      ]
+    },
+    "solutions": {
+      "architecture": [
+        "SOL-001"
+      ]
+    },
+    "cross-cutting": {
+      "roadmaps": [
+        "WP-001"
+      ]
+    }
+  }
+}

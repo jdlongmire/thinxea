@@ -1,0 +1,12 @@
+[Unit]
+Description=ThinxEA web (static SPA)
+After=network.target
+
+[Service]
+User=thinxai
+WorkingDirectory=/opt/thinxea/web
+ExecStart=/usr/bin/python3 /opt/thinxea/serve_spa.py 8940 /opt/thinxea/web
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

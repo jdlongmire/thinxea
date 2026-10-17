@@ -1,0 +1,13 @@
+[Unit]
+Description=ThinxEA API (AI layer, auth, quotas)
+After=network.target
+
+[Service]
+User=thinxai
+WorkingDirectory=/opt/thinxea/api
+EnvironmentFile=/opt/thinxea/thinxea.env
+ExecStart=/opt/thinxea/api-venv/bin/uvicorn app.main:app --app-dir /opt/thinxea/api --host 127.0.0.1 --port 8941
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
